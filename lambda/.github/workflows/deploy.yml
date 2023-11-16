@@ -33,5 +33,5 @@ jobs:
         run: |
           pip install awscli
           zip -r package.zip ./*
-          aws lambda update-function-code --function-name cost-get-aws --zip-file fileb://cost-get-aws/package.zip --publish
+          aws lambda update-function-code --function-name cost-get-aws --zip-file fileb://package.zip --publish
 

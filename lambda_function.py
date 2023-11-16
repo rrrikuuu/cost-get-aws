@@ -133,7 +133,7 @@ def lambda_handler(event, context):
                 'fields': fields,
                 'footer': "Powered by on %s Lambda" % (str(AWS_ACCOUNT_NAME)),
                 'footer_icon': "https://platform.slack-edge.com/img/default_application_icon.png",
-                'pretext': "* %s~%s の [ %s ] のAWS利用料 は :money_with_wings: %s 円です ※本日の為替レート[%s 円/1ドル]で計算しています*" % (str(start_date), str(end_date), str(AWS_ACCOUNT_NAME), str("{:,}".format(round(total * price, 0))), str(price)),
+                'pretext': "* %s~%s の [ %s ] のAWS利用料金 は :money_with_wings: %s 円です ※本日の為替レート[%s 円/1ドル]で計算しています*" % (str(start_date), str(end_date), str(AWS_ACCOUNT_NAME), str("{:,}".format(round(total * price, 0))), str(price)),
                 'channel': SLACK_CHANNEL
             }
         ]

@@ -39,7 +39,7 @@ jobs:
 
       - name: Run Python Tests
         run: |
-          python -m pytest lambda/tests --junit-xml results/pytest.xml
+          python -m pytest lambda --junit-xml results/pytest.xml
         continue-on-error: true
 
       - name: lambda update

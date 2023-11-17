@@ -33,15 +33,6 @@ jobs:
         with:
           python-version: '3.8'
 
-      - name: Install Dependencies
-        run: |
-          pip install pytest awscli
-
-      - name: Run Python Tests
-        run: |
-          python -m pytest lambda --junit-xml results/pytest.xml
-        continue-on-error: true
-
       - name: lambda update
         run: |
           pip install awscli

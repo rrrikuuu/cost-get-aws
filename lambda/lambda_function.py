@@ -14,7 +14,7 @@ logger.setLevel(logging.INFO)
 ce = boto3.client('ce')
 
 # 固定の為替レートを設定
-price = 110  # 例として、1ドルあたり110円と仮定
+price = 140  # 例として、1ドルあたり110円と仮定
 
 # パラメータストアからwebhookurlを取得する
 def get_ssm_params(*keys, region='ap-northeast-1'):
